@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="秋丽烟酒店 - 为您提供正品名烟名酒，品质保证，价格实惠">
+  <title>秋丽烟酒店 — 名烟名酒典藏</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 光标光晕 -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- 顶部导航栏 -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-mark">秋</span>
+        <div class="logo-text">
+          <span class="logo-title">秋丽烟酒店</span>
+          <span class="logo-sub">SINCE 2005</span>
+        </div>
+      </a>
+      <nav class="nav" id="navMenu">
+        <a href="#home" class="nav-link active">首页</a>
+        <a href="#products" class="nav-link">典藏臻选</a>
+        <a href="#categories" class="nav-link">品类鉴赏</a>
+        <a href="#about" class="nav-link">世家传承</a>
+        <a href="#contact" class="nav-link">雅叙之约</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 首页 —— 沉浸式大屏 -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge">— 金钻习酒授权代理商 · 名烟名酒品质甄选 —</div>
+        <h1 class="hero-title">
+          <span class="title-line title-line--brand">秋丽烟酒店</span>
+          <span class="title-line title-line--accent">二十载光阴 · 只为品质甄选</span>
+        </h1>
+        <p class="hero-subtitle">
+          每一瓶佳酿，都是岁月沉淀的艺术。<br>
+          每一条好烟，皆经悉心甄别与品鉴。
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-gold">
+            <span>鉴赏臻品</span>
+            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">预约雅叙</a>
+        </div>
+      </div>
+
+      <div class="hero-bottles">
+        <img src="38dcffa7855e2db2d843f78cf74cb8b3-removebg-preview.png" alt="秋丽烟酒店" class="bottles-img">
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>轻览</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 品牌格调 —— 横向滚动带 -->
+  <section class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>金钻习酒</span><span class="marquee-dot">·</span>
+        <span>茅台</span><span class="marquee-dot">·</span>
+        <span>五粮液</span><span class="marquee-dot">·</span>
+        <span>国窖1573</span><span class="marquee-dot">·</span>
+        <span>中华</span><span class="marquee-dot">·</span>
+        <span>拉菲</span><span class="marquee-dot">·</span>
+        <span>轩尼诗</span><span class="marquee-dot">·</span>
+        <span>黄鹤楼</span><span class="marquee-dot">·</span>
+        <span>奔富</span><span class="marquee-dot">·</span>
+        <span>剑南春</span><span class="marquee-dot">·</span>
+        <span>人头马</span><span class="marquee-dot">·</span>
+      </div>
+      <div class="marquee-inner" aria-hidden="true">
+        <span>金钻习酒</span><span class="marquee-dot">·</span>
+        <span>茅台</span><span class="marquee-dot">·</span>
+        <span>五粮液</span><span class="marquee-dot">·</span>
+        <span>国窖1573</span><span class="marquee-dot">·</span>
+        <span>中华</span><span class="marquee-dot">·</span>
+        <span>拉菲</span><span class="marquee-dot">·</span>
+        <span>轩尼诗</span><span class="marquee-dot">·</span>
+        <span>黄鹤楼</span><span class="marquee-dot">·</span>
+        <span>奔富</span><span class="marquee-dot">·</span>
+        <span>剑南春</span><span class="marquee-dot">·</span>
+        <span>人头马</span><span class="marquee-dot">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌价值 -->
+  <section class="virtues">
+    <div class="container">
+      <div class="virtues-grid">
+        <div class="virtue-card">
+          <div class="virtue-num">01</div>
+          <div class="virtue-icon">
+            <svg viewBox="0 0 48 48"><path d="M24 4L6 14v10c0 13.3 7.7 25.6 18 31.6 10.3-6 18-18.3 18-31.6V14L24 4z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 24l6 6 10-10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>正品保证</h3>
+          <p>严选渠道，每一件商品均可溯源，假一赔十</p>
+        </div>
+        <div class="virtue-card">
+          <div class="virtue-num">02</div>
+          <div class="virtue-icon">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M24 12v12l8 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>二十年沉淀</h3>
+          <p>自2005年创立，以时间为尺，丈量每一份信赖</p>
+        </div>
+        <div class="virtue-card">
+          <div class="virtue-num">03</div>
+          <div class="virtue-icon">
+            <svg viewBox="0 0 48 48"><rect x="8" y="12" width="32" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h32" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="32" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>臻品礼赠</h3>
+          <p>定制礼盒，为重要的人甄选一份体面心意</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 典藏臻选 —— 商品展示 -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Selection</span>
+        <h2 class="section-title">典藏 · 臻选</h2>
+        <div class="section-divider">
+          <span></span><span class="divider-dot"></span><span></span>
+        </div>
+        <p class="section-desc">每一款皆经悉心品鉴，只为您呈上值得珍藏的醇香</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card featured">
+          <div class="product-visual">
+            <div class="product-badge">典藏</div>
+            <div class="product-bottle">🥃</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">酱香白酒</span>
+            <h3>茅台 · 飞天</h3>
+            <p class="product-note">53度 500ml</p>
+            <p class="product-desc">酱香突出，幽雅细腻，酒体醇厚，回味悠长，空杯留香持久</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 1,499</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-visual">
+            <div class="product-bottle">🍷</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">干红葡萄酒</span>
+            <h3>拉菲 · 传奇</h3>
+            <p class="product-note">波尔多 AOC 750ml</p>
+            <p class="product-desc">深宝石红色，黑醋栗与雪松香气交织，单宁丝滑如绸</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 399</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-visual">
+            <div class="product-bottle">🚬</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">烤烟型香烟</span>
+            <h3>中华 · 软包</h3>
+            <p class="product-note">经典国烟 84mm</p>
+            <p class="product-desc">烟气饱满纯正，入喉顺滑，余味纯净，国烟典范之作</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 70/包</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-visual">
+            <div class="product-badge">收藏</div>
+            <div class="product-bottle">🍶</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">浓香白酒</span>
+            <h3>五粮液 · 普五</h3>
+            <p class="product-note">52度 500ml</p>
+            <p class="product-desc">五谷精华，香气悠久，味醇厚，入口甘美，各味谐调</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 1,399</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-visual">
+            <div class="product-bottle">🥂</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">特级干邑</span>
+            <h3>轩尼诗 · VSOP</h3>
+            <p class="product-note">法国干邑 700ml</p>
+            <p class="product-desc">橡木桶陈酿，香草与烤杏仁的芬芳，口感圆润饱满</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 568</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-visual">
+            <div class="product-badge">代理</div>
+            <div class="product-bottle">✨</div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-details">
+            <span class="product-type">酱香白酒</span>
+            <h3>金钻 · 习酒</h3>
+            <p class="product-note">53度 500ml 授权代理</p>
+            <p class="product-desc">习酒核心战略品牌，酱香典雅，醇厚协调，回味悠长，品质之选</p>
+            <div class="product-meta">
+              <span class="product-price">¥ 询价</span>
+              <button class="btn-text">垂询详情 →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品类鉴赏 -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Categories</span>
+        <h2 class="section-title">品类 · 鉴赏</h2>
+        <div class="section-divider">
+          <span></span><span class="divider-dot"></span><span></span>
+        </div>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅰ</span>
+            <h3>白酒臻藏</h3>
+            <div class="category-line"></div>
+            <p>金钻习酒 · 茅台 · 五粮液 · 国窖 · 剑南春 · 洋河</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅱ</span>
+            <h3>红酒洋酒</h3>
+            <div class="category-line"></div>
+            <p>拉菲 · 奔富 · 人头马 · 轩尼诗 · 马爹利蓝带</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅲ</span>
+            <h3>名烟典藏</h3>
+            <div class="category-line"></div>
+            <p>中华 · 黄鹤楼1916 · 玉溪 · 芙蓉王 · 利群</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅳ</span>
+            <h3>啤酒佳酿</h3>
+            <div class="category-line"></div>
+            <p>青岛 · 雪花 · 百威 · 科罗娜 · 1664白啤</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅴ</span>
+            <h3>礼盒雅赠</h3>
+            <div class="category-line"></div>
+            <p>节日甄选 · 商务馈赠 · 婚庆定制 · 伴手雅礼</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-bg"></div>
+          <div class="category-content">
+            <span class="category-num">Ⅵ</span>
+            <h3>老酒收藏</h3>
+            <div class="category-line"></div>
+            <p>年份茅台 · 限量纪念 · 绝版珍藏 · 私人窖藏</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世家传承 -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-visual">
+          <div class="about-frame">
+            <div class="frame-inner">
+              <span class="frame-char">酒</span>
+            </div>
+            <div class="frame-corners">
+              <span class="corner tl"></span><span class="corner tr"></span>
+              <span class="corner bl"></span><span class="corner br"></span>
+            </div>
+          </div>
+          <div class="about-seal">始于 2005</div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">世家 · 传承</h2>
+          <div class="section-divider">
+            <span></span><span class="divider-dot"></span><span></span>
+          </div>
+          <p class="about-lead">
+            <strong>秋丽烟酒店</strong>，始于2005年。二十年来，我们始终相信——<br>
+            真正的好烟好酒，值得被认真对待。
+          </p>
+          <p class="about-text">
+            从最初的一方小店，到如今品类齐全的烟酒专营，我们走过了一段不平淡的路。
+            与茅台、五粮液、中华等一线品牌建立了长期合作关系，
+            更是<strong>金钻习酒授权代理商</strong>，每一件商品都经过严格甄选，
+            只为让您买得放心、品得舒心。
+          </p>
+          <p class="about-text">
+            我们不止是商家，更是品味生活的引路人。无论是自饮小酌，还是佳节赠礼，
+            秋丽烟酒店都愿成为您最值得信赖的选择。
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="20">20</span>
+              <span class="stat-unit">年</span>
+              <span class="stat-label">经营历史</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="500">500</span>
+              <span class="stat-unit">+</span>
+              <span class="stat-label">在售佳品</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="10000">10,000</span>
+              <span class="stat-unit">+</span>
+              <span class="stat-label">信赖之选</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 雅叙之约 -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">雅叙 · 之约</h2>
+        <div class="section-divider">
+          <span></span><span class="divider-dot"></span><span></span>
+        </div>
+        <p class="section-desc">诚邀莅临品鉴，或联系我们，我们将竭诚为您服务</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon-ring">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>店铺地址</h3>
+          <p>XX省XX市XX区XX路XX号</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon-ring">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>联系电话</h3>
+          <p>138-XXXX-XXXX</p>
+          <p class="contact-sub">座机 XXXX-XXXXXXXX</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon-ring">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>营业时间</h3>
+          <p>周一至周日</p>
+          <p class="contact-sub">早 8:00 — 晚 22:00</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon-ring">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>微信客服</h3>
+          <p>微信号：XXXX_XXXX</p>
+          <p class="contact-sub">扫码添加，随时咨询</p>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <div class="map-placeholder">
+          <span class="map-text">📍 地图定位示意 —— 可替换为真实地图</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-cta">
+          <h2>开启您的品味之旅</h2>
+          <p>无论是日常小酌，还是佳节赠礼，我们都为您准备好了</p>
+          <a href="#contact" class="btn btn-gold">立即联系</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="footer-logo-mark">秋</span>
+              <span class="footer-logo-name">秋丽烟酒店</span>
+            </div>
+            <p>二十载光阴 · 只为品质 · 不负信赖</p>
+          </div>
+          <div class="footer-links">
+            <h4>探索</h4>
+            <a href="#home">首页</a>
+            <a href="#products">典藏臻选</a>
+            <a href="#categories">品类鉴赏</a>
+            <a href="#about">世家传承</a>
+            <a href="#contact">雅叙之约</a>
+          </div>
+          <div class="footer-links">
+            <h4>品类</h4>
+            <a href="#">白酒臻藏</a>
+            <a href="#">红酒洋酒</a>
+            <a href="#">名烟典藏</a>
+            <a href="#">礼盒雅赠</a>
+            <a href="#">老酒收藏</a>
+          </div>
+          <div class="footer-contact-info">
+            <h4>联络</h4>
+            <p>XX省XX市XX区XX路XX号</p>
+            <p>138-XXXX-XXXX</p>
+            <p>早8:00 — 晚22:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 秋丽烟酒店 | 吸烟有害健康 · 请勿向未成年人售烟 | 过量饮酒有害健康</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

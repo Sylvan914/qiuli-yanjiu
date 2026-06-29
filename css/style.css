@@ -209,52 +209,16 @@ body {
 .hero-bottles {
   flex: 1.2; max-width: 55%;
   display: flex; align-items: center; justify-content: center;
-  padding-left: 20px;
   position: relative;
 }
 
 .bottles-img {
   display: block; width: 100%; height: auto;
   max-width: 646px;
+  transform: scale(1.5) translate(8%, -5%);
   position: relative; z-index: 1;
   filter: drop-shadow(0 0 60px rgba(196,162,101,0.2)) drop-shadow(0 10px 30px rgba(0,0,0,0.4));
 }
-
-/* 编辑按钮 */
-.edit-bottle-btn {
-  position: absolute; top: -12px; right: -12px;
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  border: 1px solid rgba(196,162,101,0.4);
-  background: rgba(28,28,28,0.85); color: var(--gold);
-  font-size: 0.9rem; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  z-index: 10; opacity: 0; transition: opacity 0.3s;
-}
-
-.hero-bottles:hover .edit-bottle-btn,
-.hero-bottles.editing .edit-bottle-btn { opacity: 1; }
-
-.edit-bottle-btn:hover {
-  background: var(--gold); color: var(--wine-dark); border-color: var(--gold);
-}
-
-/* 编辑模式提示 */
-.edit-tooltip {
-  position: absolute; top: -44px; left: 50%; transform: translateX(-50%);
-  background: rgba(28,28,28,0.9); color: var(--gold-light);
-  font-size: 0.7rem; letter-spacing: 1px; white-space: nowrap;
-  padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(196,162,101,0.3);
-  pointer-events: none; z-index: 10;
-}
-
-/* 编辑模式边框提示 */
-.hero-bottles.editing {
-  outline: 1px dashed rgba(196,162,101,0.5);
-  outline-offset: 8px;
-  border-radius: 4px;
-}
-
 .hero-badge {
   font-family: var(--font-serif);
   font-size: 0.75rem; letter-spacing: 5px;

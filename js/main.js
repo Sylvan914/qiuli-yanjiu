@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initCountUp();
   initParallaxParticles();
+  initProductFilter();
+  initFloatContact();
+  initInquiryForm();
 });
 
 /* ---- 光标光晕 ---- */
@@ -222,3 +225,72 @@ function initParallaxParticles() {
     });
   });
 })();
+
+/* ---- 商品筛选与搜索 ---- */
+function initProductFilter() {
+  const tabs = document.querySelectorAll('#filterTabs .filter-tab');
+  const searchInput = document.getElementById('productSearch');
+  const cards = document.querySelectorAll('.product-card');
+  if (!tabs.length || !cards.length) return;
+
+  var currentFilter = 'all';
+
+  function applyFilter() {
+    var query = (searchInput && searchInput.value || '').trim().toLowerCase();
+    cards.forEach(function(card) {
+      var cat = card.getAttribute('data-category') || '';
+      var text = card.textContent.toLowerCase();
+      var matchCat = currentFilter === 'all' || cat === currentFilter;
+      var matchSearch = !query || text.indexOf(query) !== -1;
+      card.classList.toggle('hidden', !matchCat || !matchSearch);
+    });
+  }
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      currentFilter = tab.getAttribute('data-filter');
+      applyFilter();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilter);
+  }
+}
+
+/* ---- 悬浮联系按钮 ---- */
+function initFloatContact() {
+  var toggle = document.getElementById('floatToggle');
+  var menu = document.getElementById('floatMenu');
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    menu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function() {
+    menu.classList.remove('open');
+  });
+}
+
+/* ---- 留资表单 ---- */
+function initInquiryForm() {
+  var form = document.getElementById('inquiryForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = form.querySelectorAll('input, textarea');
+    var values = [];
+    inputs.forEach(function(el) { if (el.value.trim()) values.push(el.value.trim()); });
+    if (values.length < 2) {
+      alert('请至少填写姓名和手机号码');
+      return;
+    }
+    alert('咨询已提交！我们将尽快通过电话或微信与您联系。\n\n您也可以直接拨打 13523469469 或添加微信。');
+    form.reset();
+  });
+}
